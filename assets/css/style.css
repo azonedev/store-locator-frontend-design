@@ -5,12 +5,12 @@
 /*--
 	import-items
 --*/
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,700;1,100;1,200;1,300;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
 
 body{
 	max-width: 100% !important;
 	width: 100% !important;
-	font-family:  'Poppins', sans-serif !important;
+	font-family: 'Red Hat Display', sans-serif;;
 }
 
 /*
@@ -36,7 +36,7 @@ body{
     --orange      : #FF413D;
     --blue-green  : #00C3FF;
 	/*fonts*/
-	--font	  : 'Poppins', sans-serif;
+	--font	  :'Red Hat Display', sans-serif;
 }
 
 
@@ -58,6 +58,12 @@ li{
 }
 .main-color{
 	color:var(--main-color);
+}
+.light-blue{
+	color: var(--light-blue);
+}
+.blue-green{
+	color: var(--blue-green);
 }
 .main-bg{
 	background:var(--main-color);
@@ -220,7 +226,7 @@ header{
 
 /* hero section */
 .hero-section{
-	height: 100vh;
+	/* height: 100vh; */
 	
 }
 
