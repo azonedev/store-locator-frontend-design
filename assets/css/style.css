@@ -95,6 +95,11 @@ li{
 			transform-origin: left;
   }
 
+/* header */
+header{
+	background: linear-gradient(90deg,var(--deep-blue),var(--main-color), var(--light-blue));
+}
+
 /* navbar */
 #menu-area{
     /* background: var(--main-color); */
@@ -102,8 +107,7 @@ li{
 	display: block;
 }
 #menu-area .navbar a{
-    
-    /* color:var(--white) !important; */
+    color:var(--white) !important;
 }
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
@@ -111,7 +115,7 @@ li{
 	top: 0;
 	width: 100%;
 	z-index: 100;
-	background: var(--main-color);
+	background: linear-gradient(90deg,var(--deep-blue),var(--main-color), var(--light-blue));
   }
 .sticky a{
 	color:var(--white) !important;
