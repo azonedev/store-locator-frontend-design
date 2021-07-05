@@ -6,6 +6,7 @@
     3. JavaScript
     4. Bootstrap
     5. Icon: https://feathericons.com/
+    6. Font : Poppins
 
 ## Coding Styles
     File name :

@@ -1,0 +1,126 @@
+*{
+    padding:0px;
+    margin: 0px;
+}
+/*--
+	import-items
+--*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,700;1,100;1,200;1,300;1,800&display=swap');
+
+body{
+	max-width: 100% !important;
+	width: 100% !important;
+	font-family:  'Poppins', sans-serif !important;
+}
+
+/*
+	Colors  :;
+	white       : #FFFFFF;
+	deep-blue   : #1E0E62;
+	light-black : #687482;
+	main-color  : #1459BA; //blue
+    Light-blue : #437AC8
+*/
+
+
+/*-----
+	pre-define variables
+----*/
+:root {
+	/*colors*/
+	--white       : #FFFFFF;
+	--deep-blue   : #0042A1;
+	--light-black : #687482;
+	--light-blue  : #437AC8;
+	--main-color  : #1459BA;
+    --orange      : #FF413D;
+    --blue-green  : #00C3FF;
+	/*fonts*/
+	--font	  : 'Poppins', sans-serif;
+}
+
+
+
+/*--common styles---*/
+a{
+	text-decoration: none;
+	color:currentcolor;
+}
+a:hover{
+	color: currentColor;
+}
+
+img{
+	max-width: 100%;
+}
+li{
+	list-style-type: none;
+}
+.main-color{
+	color:var(--main-color);
+}
+.main-bg{
+	background:var(--main-color);
+}
+
+/*-- common hover styles--*/
+.fancy-link {
+	text-decoration: none;
+	position: relative;
+  }
+  .fency-link:hover{
+	  color:var(--orange);
+  }
+  .fancy-link::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background: var(--orange);
+	-webkit-transform: scaleX(0);
+			transform: scaleX(0);
+	-webkit-transform-origin: right;
+			transform-origin: right;
+	transition: -webkit-transform 250ms ease-in;
+	transition: transform 250ms ease-in;
+	transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+  }
+  
+  .fancy-link:hover::after {
+	-webkit-transform: scaleX(1);
+			transform: scaleX(1);
+	-webkit-transform-origin: left;
+			transform-origin: left;
+  }
+
+/* navbar */
+#menu-area{
+    /* background: var(--main-color); */
+	width: 100%;
+	display: block;
+}
+#menu-area .navbar a{
+    
+    /* color:var(--white) !important; */
+}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	background: var(--main-color);
+  }
+.sticky a{
+	color:var(--white) !important;
+}
+/* header{
+	background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+} */
+/* hero section */
+.hero-section{
+	height: 100vh;
+	
+}
