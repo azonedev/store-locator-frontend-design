@@ -262,3 +262,12 @@ header{
     height: 70px;
 }
 
+/* blog */
+.blog-item h6{
+	color: var(--light-black);
+}
+.blog-item .blog-image{
+	height:170px;
+	width: 100%;
+}
+
