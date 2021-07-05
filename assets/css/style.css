@@ -254,8 +254,11 @@ header{
   }
 
 /* hero section */
-.hero-section{
-	/* height: 100vh; */
-	
+
+
+/* banks section */
+#bank-section .bank-logo{
+	width: 150px;
+    height: 70px;
 }
 
