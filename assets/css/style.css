@@ -49,7 +49,12 @@ a{
 a:hover{
 	color: currentColor;
 }
-
+.a-hover{
+	transition: all ease 0.4s;
+}
+.a-hover:hover{
+	color: var(--main-color);
+}
 img{
 	max-width: 100%;
 }
@@ -82,6 +87,17 @@ input:focus {
     border-color: var(--main-color) !important;
     box-shadow: 0 0 10px var(--main-color) !important;
 }
+
+.main-headline{
+	display: block;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-bottom: 3px solid var(--light-blue);
+	border-left: 15px solid var(--main-color);
+	padding-left: 15px;
+	padding-bottom: 5px;
+}
+
 /*-- common hover styles--*/
 .fancy-link {
 	text-decoration: none;
