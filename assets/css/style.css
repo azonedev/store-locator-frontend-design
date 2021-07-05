@@ -271,3 +271,13 @@ header{
 	width: 100%;
 }
 
+/* footer */
+footer{
+	background:var(--main-color);
+	color: var(--white);
+}
+.footer-bottom{
+	background:var(--deep-blue);
+	color: var(--white);
+}
+
