@@ -130,6 +130,13 @@ header{
 #menu-area .navbar a{
     color:var(--white) !important;
 }
+.navbar-light .navbar-toggler {
+	color: var(--white);
+    border-color: var(--white);
+}
+.navbar-toggler {
+    background-color: var(--white);
+}
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
 	position: fixed;
