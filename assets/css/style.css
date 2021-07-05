@@ -55,6 +55,12 @@ a:hover{
 .a-hover:hover{
 	color: var(--main-color);
 }
+.block-hover{
+	transition: all ease 0.4s;
+}
+.block-hover:hover{
+	background: var(--light-blue);
+}
 img{
 	max-width: 100%;
 }
@@ -96,6 +102,13 @@ input:focus {
 	border-left: 15px solid var(--main-color);
 	padding-left: 15px;
 	padding-bottom: 5px;
+}
+.view-all{
+	background: var(--main-color);
+	color: var(--white);
+	padding: 8px 12px;
+	border-radius: 0px 20px 20px 0px;
+	border:none;
 }
 
 /*-- common hover styles--*/
