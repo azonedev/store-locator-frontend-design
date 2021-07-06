@@ -93,6 +93,14 @@ input:focus {
     border-color: var(--main-color) !important;
     box-shadow: 0 0 10px var(--main-color) !important;
 }
+label{
+	font-weight: 500;
+	padding-bottom: 5px;
+	color: #000;
+}
+.form-group{
+	padding-bottom: 10px;
+}
 
 .main-headline{
 	display: block;
