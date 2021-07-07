@@ -29,10 +29,10 @@ body{
 :root {
 	/*colors*/
 	--white       : #FFFFFF;
-	--deep-blue   : #0042A1;
+	--deep-blue   : #1459BA;
 	--light-black : #687482;
-	--light-blue  : #437AC8;
-	--main-color  : #1459BA;
+	--light-blue  : #399ff1c9;
+	--main-color  : #437AC8;
     --orange      : #FF413D;
     --blue-green  : #00C3FF;
 	/*fonts*/
