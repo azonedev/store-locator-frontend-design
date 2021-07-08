@@ -301,3 +301,6 @@ footer{
 	color:black;
 	font-weight: bold;
 }
+.bank-single .bank-info{
+	height: 72px;
+}
