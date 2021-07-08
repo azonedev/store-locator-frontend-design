@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Locator HTML template</title>
+    <link rel="shortcut icon" href="assets/icons/favicon.svg" type="image/x-icon">
+    <!-- bootstrap-cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- main css file -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div id="menu-area">
+            <nav class="navbar navbar-expand-lg navbar-light container">
+                <a class="navbar-brand" href="home.html">
+                    <!-- logo -->
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/online-store.png"/> 
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-white"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="me-auto">
+                   
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item px-2"> 
+                        <a href="#" class="nav-link circle-img fw-bold"  onclick="openSearch()"><img src="assets/icons/search.svg" alt="Search Icon"></a>
+                    </li>
+                </ul>
+                <ul class="d-flex navbar-nav">
+                    
+                    <li class="nav-item px-2"> 
+                        <a href="articles.html" class="nav-link fancy-link fw-bold">Blog</a>
+                    </li>
+                    <li class="nav-item px-2"> 
+                        <a href="contact-us.html" class="nav-link fancy-link fw-bold">Contact Us</a>
+                    </li>
+                    <li class="nav-item px-2"> 
+                        <a href="about-us.html" class="nav-link fancy-link fw-bold">About Us</a>
+                    </li>
+                </ul>
+                </div>
+            </nav>
+            <!-- full screen search option on header -->
+            <div id="myOverlay" class="overlay">
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+                <div class="overlay-content">
+                  <form action="action_page.php">
+                    <input type="text" placeholder="Enter bank name / Enter town, city or zipcode" name="search">
+                    <button type="submit"><img src="assets/icons/search.svg" alt="Search Icon"></button>
+                  </form>
+                </div>
+              </div>
+        </div> <!--#menu-area-->
+    </header>
+
+    </div>
+
+    <main class="container  pt-5 mt-5">
+        <div class="city-wrap row">
+            <div class="sections col-lg-9 col-12">
+
+                <!-- find bank by city section -->
+                <section id="bank-by-city" class="pt-5">
+                    <h2 class="main-headline"> <img src="assets/icons/layout.svg" width="40px" alt=""> BANK BRANCHES IN FAIRHOPE, ALABAMA</h2>
+
+                    <div id="city-overview" class="row pt-3">
+                        <div class="left-image col-md-5">
+                            <img src="assets/images/world-map-no-line.svg" alt="state world map">
+                            <h4> <img src="assets/icons/map-pin.svg" alt="icon"> FAIRHOPE, ALABAMA</h4>
+                        </div><!--.left-image-->
+                        <div class="right-overview col-md-7 pt-3">
+                            <p>
+                                There are 148 local and national banks serving the financial needs of their customers in the state of Alabama with 1413 branches in 291 cities and towns. You can click the logo of a bank on right to view the list of all locations of your preferred banking company in Alabama or choose a city & town from the list below.
+                                <br> <br>
+                                The largest banks in Alabama with most branches are: Regions Bank with 198 offices, Wells Fargo Bank with 108 offices, BBVA with 88 offices
+                            </p>
+                        </div><!--.right-overview-->
+                    </div><!--#city-overview-->
+
+                </section> <!--#bank-by-city-->
+
+            </div> <!-- .sections -->
+
+            <div class="sidebar col-lg-3 d-none d-lg-block pt-5">
+                <!-- sideabr city -->
+                <h5 class="main-headline">Cities with most branches</h5>
+                
+                <div class="sidebar-city">
+                    <!-- single-city -->
+                    <div class="p-2 shadow-sm border mb-1 a-hover">
+                        <a href="" class="city">
+                            <h5>Houston, Texas</h5>
+                            <small>641 offices of 35 banks</small>
+                        </a>
+                    </div>
+                    <!-- single-city -->
+                    <div class="p-2 shadow-sm border mb-1 a-hover">
+                        <a href="" class="city">
+                            <h5>New York City, New York</h5>
+                            <small>600 offices of 35 banks</small>
+                        </a>
+                    </div>
+                    <!-- single-city -->
+                    <div class="p-2 shadow-sm border mb-1 a-hover">
+                        <a href="" class="city">
+                            <h5>Houston, Texas</h5>
+                            <small>641 offices of 35 banks</small>
+                        </a>
+                    </div>
+                    <!-- single-city -->
+                    <div class="p-2 shadow-sm border mb-1 a-hover">
+                        <a href="" class="city">
+                            <h5>Houston, Texas</h5>
+                            <small>641 offices of 35 banks</small>
+                        </a>
+                    </div>
+                    <!-- single-city -->
+                    <div class="p-2 shadow-sm border mb-1 a-hover">
+                        <a href="" class="city">
+                            <h5>Houston, Texas</h5>
+                            <small>641 offices of 35 banks</small>
+                        </a>
+                    </div>
+                    <!-- single-city -->
+                    <div class="p-2 shadow-sm border mb-1 a-hover">
+                        <a href="" class="city">
+                            <h5>Houston, Texas</h5>
+                            <small>641 offices of 35 banks</small>
+                        </a>
+                    </div>
+                    <!-- single-city -->
+                    <div class="p-2 shadow-sm border mb-1 a-hover">
+                        <a href="" class="city">
+                            <h5>Houston, Texas</h5>
+                            <small>641 offices of 35 banks</small>
+                        </a>
+                    </div>
+                    <!-- single-city -->
+                    <div class="p-2 shadow-sm border mb-1 a-hover">
+                        <a href="" class="city">
+                            <h5>Houston, Texas</h5>
+                            <small>641 offices of 35 banks</small>
+                        </a>
+                    </div>
+                    <!-- single-city -->
+                    <div class="p-2 shadow-sm border mb-1 a-hover">
+                        <a href="" class="city">
+                            <h5>Houston, Texas</h5>
+                            <small>641 offices of 35 banks</small>
+                        </a>
+                    </div>
+                </div> <!--.sidebar-city-->
+
+                <!-- sidebar comment-review -->
+                <h5 class="main-headline mt-5">COMMENTS, REVIEWS & COMPLAINTS</h5>
+
+                <div class="sidebar-comment pt-2">
+                    <!-- single-comment -->
+                    <a href="" class="a-hover">
+                        <h6 class="fw-bold"> <img src="assets/icons/user.svg" alt="icon"> Jon Doe</h6>
+                        <span>Bank of America</span>
+                        <br>
+                        <small>This bank branch is awesome! Friendly, helpful and great hours.</small>
+                    </a>
+                    <hr>
+                    <!-- single-comment -->
+                    <a href="" class="a-hover">
+                        <h6 class="fw-bold"> <img src="assets/icons/user.svg" alt="icon"> Jon Doe</h6>
+                        <span>Bank of America</span>
+                        <br>
+                        <small>This bank branch is awesome! Friendly, helpful and great hours.</small>
+                    </a>
+                    <hr>
+                    <!-- single-comment -->
+                    <a href="" class="a-hover">
+                        <h6 class="fw-bold"> <img src="assets/icons/user.svg" alt="icon"> Jon Doe</h6>
+                        <span>Bank of America</span>
+                        <br>
+                        <small>This bank branch is awesome! Friendly, helpful and great hours.</small>
+                    </a>
+                    <hr>
+                    <!-- single-comment -->
+                    <a href="" class="a-hover">
+                        <h6 class="fw-bold"> <img src="assets/icons/user.svg" alt="icon"> Jon Doe</h6>
+                        <span>Bank of America</span>
+                        <br>
+                        <small>This bank branch is awesome! Friendly, helpful and great hours.</small>
+                    </a>
+                    <hr>
+                    <!-- single-comment -->
+                    <a href="" class="a-hover">
+                        <h6 class="fw-bold"> <img src="assets/icons/user.svg" alt="icon"> Jon Doe</h6>
+                        <span>Bank of America</span>
+                        <br>
+                        <small>This bank branch is awesome! Friendly, helpful and great hours.</small>
+                    </a>
+                    <hr>
+                    <!-- single-comment -->
+                    <a href="" class="a-hover">
+                        <h6 class="fw-bold"> <img src="assets/icons/user.svg" alt="icon"> Jon Doe</h6>
+                        <span>Bank of America</span>
+                        <br>
+                        <small>This bank branch is awesome! Friendly, helpful and great hours.</small>
+                    </a>
+                    <hr>
+                    <!-- single-comment -->
+                    <a href="" class="a-hover">
+                        <h6 class="fw-bold"> <img src="assets/icons/user.svg" alt="icon"> Jon Doe</h6>
+                        <span>Bank of America</span>
+                        <br>
+                        <small>This bank branch is awesome! Friendly, helpful and great hours.</small>
+                    </a>
+                    <hr>
+                    <!-- single-comment -->
+                    <a href="" class="a-hover">
+                        <h6 class="fw-bold"> <img src="assets/icons/user.svg" alt="icon"> Jon Doe</h6>
+                        <span>Bank of America</span>
+                        <br>
+                        <small>This bank branch is awesome! Friendly, helpful and great hours.</small>
+                    </a>
+                    <hr>
+                    <!-- single-comment -->
+                    <a href="" class="a-hover">
+                        <h6 class="fw-bold"> <img src="assets/icons/user.svg" alt="icon"> Jon Doe</h6>
+                        <span>Bank of America</span>
+                        <br>
+                        <small>This bank branch is awesome! Friendly, helpful and great hours.</small>
+                    </a>
+                    <hr>
+                    <!-- single-comment -->
+                    <a href="" class="a-hover">
+                        <h6 class="fw-bold"> <img src="assets/icons/user.svg" alt="icon"> Jon Doe</h6>
+                        <span>Bank of America</span>
+                        <br>
+                        <small>This bank branch is awesome! Friendly, helpful and great hours.</small>
+                    </a>
+                    <hr>
+                </div> <!--.sidebar-comment-->
+
+
+            </div><!--sidebar-->
+
+        </div><!--city-wrap-->
+    </main>
+
+    <footer class="mt-5">
+        <div class="container footer-top">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 pt-5 footer-top-primary-col col-6">
+              <a href="home.html">
+                <div class="logo">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/online-store.png">
+                </div>
+              </a>
+              <br>
+              <p><i class="bi bi-geo-alt"></i> Joondalup WA 6027, Australia</p>
+              <p><i class="bi bi-envelope"></i> <a href="mailto:abdullah.azonedev@gmail.com" class="fency-link"> abdullah.azonedev@gmail.com</a></p>
+    
+            </div>
+            <div class="col-md-3 col-sm-6 pt-5 footer-top-about-col col-6">
+              <p>
+                <a href="about-us.html" class="fancy-link">About Us</a>
+              </p>
+              <p>
+                <a href="contact-us.html" class="fancy-link">Contact Us</a>
+              </p>
+              <p>
+                <a href="terms-condition.html" class="fancy-link">Terms & Condition of services</a>
+              </p>
+            </div>
+            <div class="col-md-3 col-sm-6 pt-5 footer-top-for-business-col col-6">
+              <p>
+                <a href="articles.html" class="fancy-link">Article form store locator</a>
+              </p>
+              <p>
+                <a href="state-store.html" class="fancy-link">All States</a>
+              </p>
+              <p>
+                <a href="city-store.html" class="fancy-link">All Cities</a>
+              </p>
+            </div>
+            <div class="col-md-3 col-sm-6 pt-5 footer-top-services-col col-6">
+              <p>
+                <a href="contact-us.html" class="fancy-link">Software development</a>
+              </p>
+              <p>
+                <a href="contact-us.html" class=" fancy-link">Web application development</a>
+              </p>
+              <p>
+                <a href="contact-us.html" class=" fancy-link">Digital marketing</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom fw-bold text-center p-3">
+            Copyright @ Store Locator | Designed & Developed by - <a href="http://azonedev.com" target="_blank" class="fancy-link">azOneDev</a>
+        </div>
+    </footer>
+
+    <!-- script-cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+    <!-- js-library -->
+    <script src="assets/js-lib/"></script>
+
+    <!-- main-script -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

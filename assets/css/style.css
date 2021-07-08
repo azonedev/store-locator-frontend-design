@@ -153,9 +153,9 @@ label{
 
 
 /* circle */
-.circle{
+/* .circle{
 
-}
+} */
 .circle-img img{
     background:var(--blue-green);
     padding: 15px;
@@ -289,3 +289,15 @@ footer{
 	color: var(--white);
 }
 
+
+/* city-store page */
+#city-overview .left-image{
+	position: relative;
+}
+#city-overview h4{
+	position: absolute;
+	top: 45%;
+	left: 10%;
+	color:black;
+	font-weight: bold;
+}
