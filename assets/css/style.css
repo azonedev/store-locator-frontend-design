@@ -88,7 +88,7 @@ li{
 .light-blue-bg{
 	background: var(--light-blue);
 }
-input:focus { 
+input:focus,select:focus,textarea:focus { 
     outline: none !important;
     border-color: var(--main-color) !important;
     box-shadow: 0 0 10px var(--main-color) !important;
