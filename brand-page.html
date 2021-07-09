@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Locator HTML template</title>
+    <link rel="shortcut icon" href="assets/icons/favicon.svg" type="image/x-icon">
+    <!-- bootstrap-cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- main css file -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div id="menu-area">
+            <nav class="navbar navbar-expand-lg navbar-light container">
+                <a class="navbar-brand" href="home.html">
+                    <!-- logo -->
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/online-store.png"/> 
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-white"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="me-auto">
+                   
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item px-2"> 
+                        <a href="#" class="nav-link circle-img fw-bold"  onclick="openSearch()"><img src="assets/icons/search.svg" alt="Search Icon"></a>
+                    </li>
+                </ul>
+                <ul class="d-flex navbar-nav">
+                    
+                    <li class="nav-item px-2"> 
+                        <a href="articles.html" class="nav-link fancy-link fw-bold">Blog</a>
+                    </li>
+                    <li class="nav-item px-2"> 
+                        <a href="contact-us.html" class="nav-link fancy-link fw-bold">Contact Us</a>
+                    </li>
+                    <li class="nav-item px-2"> 
+                        <a href="about-us.html" class="nav-link fancy-link fw-bold">About Us</a>
+                    </li>
+                </ul>
+                </div>
+            </nav>
+            <!-- full screen search option on header -->
+            <div id="myOverlay" class="overlay">
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+                <div class="overlay-content">
+                  <form action="action_page.php">
+                    <input type="text" placeholder="Enter bank name / Enter town, city or zipcode" name="search">
+                    <button type="submit"><img src="assets/icons/search.svg" alt="Search Icon"></button>
+                  </form>
+                </div>
+              </div>
+        </div> <!--#menu-area-->
+    </header>
+
+    </div>
+
+    <main class="container  pt-5 mt-5">
+        <div class="branch-wrap row">
+            <div class="sections col-lg-9 col-12">
+
+                <!-- branch overview -->
+                <div id="branch-overview">
+                    <h2 class="main-headline"> <img src="assets/icons/layout.svg" width="40px" alt="icon"> bank of America </h2>
+                    <div class="row pt-3">
+                        <div class="left-image col-md-3 text-center pt-3 mt-5">
+                            <img src="assets/images/bank-of-america.jpg" width="90%" class="" alt="bank logo">
+                        </div><!--.left-image-->
+                        <div class="right-overview col-md-9 pt-3">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h3 class="h6 fw-bold"><img src="assets/icons/layout.svg" alt="icon"> BANK NAME:</h3>
+                                    <small class="fw-bold light-blue">Bank of America</small>
+                                    <hr>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h3 class="h6 fw-bold"><img src="assets/icons/server.svg" alt="icon"> BANK CLASS:</h3>
+                                    <small class="fw-bold light-blue">National Bank
+                                    </small>
+                                    <hr>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h3 class="h6 fw-bold"><img src="assets/icons/map.svg" alt="icon"> MEMBER FDIC:</h3>
+                                    <small class="fw-bold light-blue">Certificate #3510
+                                    </small>
+                                    <hr>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h3 class="h6 fw-bold"><img src="assets/icons/map.svg" alt="icon"> ROUTING NUMBER:</h3>
+                                    <small class="fw-bold light-blue">N/A
+                                    </small>
+                                    <hr>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h3 class="h6 fw-bold"><img src="assets/icons/map-pin-black.svg" alt="icon">LOCATIONS:
+                                    </h3>
+                                    <small class="fw-bold light-blue">4218 Branches in 37 states
+                                    </small>
+                                    <hr>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h3 class="h6 fw-bold"><img src="assets/icons/hash.svg" alt="icon"> WEB ADDRESS:</h3>
+                                    <small class="fw-bold light-blue">bankofamerica.com</small>
+                                    <hr>
+                                </div>
+                                <div class="col-12">
+                                    <h3 class="h6 fw-bold"><img src="assets/icons/home.svg" alt="icon"> HEADQUARTERS</h3>
+                                    <small class="fw-bold light-blue fancy-link"><a href="http://maps.google.com/maps?q=100 North Tryon St, Charlotte, North Carolina 28202
+                                        " target="_blank">100 North Tryon St, Charlotte, North Carolina 28202</a>
+                                    </small>
+                                    <hr>
+                                </div>
+                            </div>
+                        </div><!--.right-overview-->
+                    </div>
+                </div> <!-- #branch-overview -->
+
+                <!-- branch-location -->
+                <div id="branch-location" class="mt-5">
+                    <h2 class="main-headline"> <img src="assets/icons/map.svg" width="40px" alt="">  BRAND LOCATION </h2>
+
+                    <div class="google-iframe mt-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3436.9386483302906!2d-87.90479648487354!3d30.522773881710858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889a408f8a4e46d1%3A0x10cf8880b8b0079e!2s 408 Fairhope Avenue, Fairhope, AL 36532!5e0 !3m2!1sen!2sbd!4v1625761079090!5m2!1sen!2sbd" width="100%" height="300" style="border:2px solid var(--light-blue);" allowfullscreen="yes" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <!-- office-details -->
+                <div id="office-details" class="mt-5">
+                    <h2 class="main-headline"> <img src="assets/icons/layout.svg" width="40px" alt="icon">  OFFICE DETAILS </h2>
+                    <div class="mt-4">
+                        <p>The First Bank Fairhope branch is one of the 69 offices of the bank and has been serving the financial needs of their customers in Fairhope, Baldwin county, Alabama for over 18 years. Fairhope office is located at 408 Fairhope Avenue, Fairhope. You can also contact the bank by calling the branch phone number at 251-000-2222</p>
+
+                        <p>The First Bank Fairhope branch operates as a full service brick and mortar office. For lobby hours, drive-up hours and online banking services please visit the official website of the bank at www.thefirstbank.com. You can edit branch details by clicking here if you believe the information is incomplete, incorrect, out of date or misleading.</p>
+                    </div>
+                </div> <!-- #office-details-->
+
+                <!-- office-state -->
+                <div id="office-state" class="mt-5">
+                    <h2 class="main-headline"> <img src="assets/icons/layout.svg" width="40px" alt="icon">  BANK OF AMERICA OFFICES IN STATES
+                    </h2>
+                    <!-- states -->
+                    <div id="states" class="pt-4 row">
+                        <!-- single-state -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="" class="p-2 shadow-sm border mb-2 block-hover rounded d-block">
+                                <h5> ALBERTVILLE</h5>
+                                <small>35 offices</small>
+                            </a>
+                        </div>
+                        <!-- single-state -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="" class="p-2 shadow-sm border mb-2 block-hover rounded d-block">
+                                <h5> BLOUNTSVILLE</h5>
+                                <small>35 offices</small>
+                            </a>
+                        </div>
+                        <!-- single-state -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="" class="p-2 shadow-sm border mb-2 block-hover rounded d-block">
+                                <h5> CHILDERSBURG</h5>
+                                <small>35 offices</small>
+                            </a>
+                        </div>
+                        <!-- single-state -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="" class="p-2 shadow-sm border mb-2 block-hover rounded d-block">
+                                <h5> ALBERTVILLE</h5>
+                                <small>35 offices</small>
+                            </a>
+                        </div>
+                        <!-- single-state -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="" class="p-2 shadow-sm border mb-2 block-hover rounded d-block">
+                                <h5> BLOUNTSVILLE</h5>
+                                <small>35 offices</small>
+                            </a>
+                        </div>
+                        <!-- single-state -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="" class="p-2 shadow-sm border mb-2 block-hover rounded d-block">
+                                <h5> CHILDERSBURG</h5>
+                                <small>35 offices</small>
+                            </a>
+                        </div>
+                        <!-- single-state -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="" class="p-2 shadow-sm border mb-2 block-hover rounded d-block">
+                                <h5> ALBERTVILLE</h5>
+                                <small>35 offices</small>
+                            </a>
+                        </div>
+                        <!-- single-state -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="" class="p-2 shadow-sm border mb-2 block-hover rounded d-block">
+                                <h5> BLOUNTSVILLE</h5>
+                                <small>35 offices</small>
+                            </a>
+                        </div>
+                        <!-- single-state -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="" class="p-2 shadow-sm border mb-2 block-hover rounded d-block">
+                                <h5> CHILDERSBURG</h5>
+                                <small>35 offices</small>
+                            </a>
+                        </div>
+                        <!-- single-state -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="" class="p-2 shadow-sm border mb-2 block-hover rounded d-block">
+                                <h5> ALBERTVILLE</h5>
+                                <small>35 offices</small>
+                            </a>
+                        </div>
+                        <!-- single-state -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="" class="p-2 shadow-sm border mb-2 block-hover rounded d-block">
+                                <h5> BLOUNTSVILLE</h5>
+                                <small>35 offices</small>
+                            </a>
+                        </div>
+                        <!-- single-state -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="" class="p-2 shadow-sm border mb-2 block-hover rounded d-block">
+                                <h5> CHILDERSBURG</h5>
+                                <small>35 offices</small>
+                            </a>
+                        </div>
+                        <!-- single-state -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="" class="p-2 shadow-sm border mb-2 block-hover rounded d-block">
+                                <h5> ALBERTVILLE</h5>
+                                <small>35 offices</small>
+                            </a>
+                        </div>
+                        <!-- single-state -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="" class="p-2 shadow-sm border mb-2 block-hover rounded d-block">
+                                <h5> BLOUNTSVILLE</h5>
+                                <small>35 offices</small>
+                            </a>
+                        </div>
+                        <!-- single-state -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="" class="p-2 shadow-sm border mb-2 block-hover rounded d-block">
+                                <h5> CHILDERSBURG</h5>
+                                <small>35 offices</small>
+                            </a>
+                        </div>
+                        <!-- single-state -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="" class="p-2 shadow-sm border mb-2 block-hover rounded d-block">
+                                <h5> ALBERTVILLE</h5>
+                                <small>35 offices</small>
+                            </a>
+                        </div>
+                        <!-- single-state -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="" class="p-2 shadow-sm border mb-2 block-hover rounded d-block">
+                                <h5> BLOUNTSVILLE</h5>
+                                <small>35 offices</small>
+                            </a>
+                        </div>
+                        <!-- single-state -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="" class="p-2 shadow-sm border mb-2 block-hover rounded d-block">
+                                <h5> CHILDERSBURG</h5>
+                                <small>35 offices</small>
+                            </a>
+                        </div>
+                        <!-- single-state -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="" class="p-2 shadow-sm border mb-2 block-hover rounded d-block">
+                                <h5> ALBERTVILLE</h5>
+                                <small>35 offices</small>
+                            </a>
+                        </div>
+                        <!-- single-state -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="" class="p-2 shadow-sm border mb-2 block-hover rounded d-block">
+                                <h5> BLOUNTSVILLE</h5>
+                                <small>35 offices</small>
+                            </a>
+                        </div>
+                        <!-- single-state -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="" class="p-2 shadow-sm border mb-2 block-hover rounded d-block">
+                                <h5> CHILDERSBURG</h5>
+                                <small>35 offices</small>
+                            </a>
+                        </div>
+                        <!-- single-state -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="" class="p-2 shadow-sm border mb-2 block-hover rounded d-block">
+                                <h5> ALBERTVILLE</h5>
+                                <small>35 offices</small>
+                            </a>
+                        </div>
+                        <!-- single-state -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="" class="p-2 shadow-sm border mb-2 block-hover rounded d-block">
+                                <h5> BLOUNTSVILLE</h5>
+                                <small>35 offices</small>
+                            </a>
+                        </div>
+                        <!-- single-state -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="" class="p-2 shadow-sm border mb-2 block-hover rounded d-block">
+                                <h5> CHILDERSBURG</h5>
+                                <small>35 offices</small>
+                            </a>
+                        </div>
+                    </div>
+                </div> <!-- #office-state-->
+
+
+                <div id="review-comment" class="mt-5">
+                    <h2 class="main-headline"> <img src="assets/icons/layout.svg" width="40px" alt="icon">brand Reviews </h2>
+                    <div class="p-3"></div>
+                    <!-- reviews -->
+                    <div class="reviews">
+                        <div><img src="assets/icons/user.svg" alt="icon"> <span class="h6 fw-bold">Jhone Doe</span> <small>19-july, 2021</small> </div>
+                        <p>Reviewed on : BANK OF AMERICA</p>
+                        <div>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum sint ullam corporis, nulla atque rem dolor excepturi cumque nostrum optio.
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="reviews">
+                        <div><img src="assets/icons/user.svg" alt="icon"> <span class="h6 fw-bold">Jhone Doe</span> <small>19-july, 2021</small> </div>
+                        <p>Reviewed on : BANK OF AMERICA</p>
+                        <div>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum sint ullam corporis, nulla atque rem dolor excepturi cumque nostrum optio.
+                        </div>
+                        <hr>
+                    </div>
+
+                    <!-- write-review -->
+                    <div id="write-review" class="mt-2">
+                        <h2 class="main-headline"> <img src="assets/icons/layout.svg" width="40px" alt="icon"> Write Your Review </h2>
+                        <div class="row">
+                            <!-- left -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">Full Name : </label>
+                                    <input type="text" class="form-control" name="name" placeholder="Jone Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Email : </label>
+                                    <input type="email" class="form-control" name="email" placeholder="jone@doe.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Rating</label>
+                                    <select name="rating" id="" class="form-control">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">Message Body : </label>
+                                    <textarea name="" id="" cols="30" rows="7.5" class="form-control" name="message" placeholder="Your message body will be place here"> </textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2"></div>
+                        <button type="submit" class="btn view-all"> <img src="assets/icons/send.svg" alt="icon"> Submit Review</button>
+                    </div> <!-- #write-review -->
+                </div> <!-- #review-comment -->
+
+            </div> <!-- .sections -->
+
+            <div class="sidebar col-lg-3 d-none d-lg-block">
+                <!-- sidebar review -->
+                <h5 class="main-headline">RATING & CUSTOMER REVIEWS</h5>
+                <!-- rating -->
+                <div class="p-3 text-center border shadow-sm">
+                    <h3 class="fw-bold">3.5 / <small class="fw-normal">5</small> </h3>
+                    <span>
+                        <img src="https://img.icons8.com/material-sharp/24/4a90e2/star--v1.png"/>
+                        <img src="https://img.icons8.com/material-sharp/24/4a90e2/star--v1.png"/>
+                        <img src="https://img.icons8.com/material-sharp/24/4a90e2/star--v1.png"/>
+                        <img src="https://img.icons8.com/material-sharp/24/4a90e2/star-half-empty.png"/>
+                        <img src="https://img.icons8.com/material-outlined/24/4a90e2/star--v2.png"/>
+                    </span>
+                </div>
+                <div class="p-2"></div>
+                
+                <!-- sideabr city -->
+                <h5 class="main-headline">Cities with most branches</h5>
+                
+                <div class="sidebar-city">
+                    <!-- single-city -->
+                    <div class="p-2 shadow-sm border mb-1 a-hover">
+                        <a href="" class="city">
+                            <h5>Houston, Texas</h5>
+                            <small>641 offices of 35 banks</small>
+                        </a>
+                    </div>
+                    <!-- single-city -->
+                    <div class="p-2 shadow-sm border mb-1 a-hover">
+                        <a href="" class="city">
+                            <h5>New York City, New York</h5>
+                            <small>600 offices of 35 banks</small>
+                        </a>
+                    </div>
+                    <!-- single-city -->
+                    <div class="p-2 shadow-sm border mb-1 a-hover">
+                        <a href="" class="city">
+                            <h5>Houston, Texas</h5>
+                            <small>641 offices of 35 banks</small>
+                        </a>
+                    </div>
+                    <!-- single-city -->
+                    <div class="p-2 shadow-sm border mb-1 a-hover">
+                        <a href="" class="city">
+                            <h5>Houston, Texas</h5>
+                            <small>641 offices of 35 banks</small>
+                        </a>
+                    </div>
+                    <!-- single-city -->
+                    <div class="p-2 shadow-sm border mb-1 a-hover">
+                        <a href="" class="city">
+                            <h5>Houston, Texas</h5>
+                            <small>641 offices of 35 banks</small>
+                        </a>
+                    </div>
+                    <!-- single-city -->
+                    <div class="p-2 shadow-sm border mb-1 a-hover">
+                        <a href="" class="city">
+                            <h5>Houston, Texas</h5>
+                            <small>641 offices of 35 banks</small>
+                        </a>
+                    </div>
+                    <!-- single-city -->
+                    <div class="p-2 shadow-sm border mb-1 a-hover">
+                        <a href="" class="city">
+                            <h5>Houston, Texas</h5>
+                            <small>641 offices of 35 banks</small>
+                        </a>
+                    </div>
+                    <!-- single-city -->
+                    <div class="p-2 shadow-sm border mb-1 a-hover">
+                        <a href="" class="city">
+                            <h5>Houston, Texas</h5>
+                            <small>641 offices of 35 banks</small>
+                        </a>
+                    </div>
+                    <!-- single-city -->
+                    <div class="p-2 shadow-sm border mb-1 a-hover">
+                        <a href="" class="city">
+                            <h5>Houston, Texas</h5>
+                            <small>641 offices of 35 banks</small>
+                        </a>
+                    </div>
+                </div> <!--.sidebar-city-->
+
+                <!-- sidebar comment-review -->
+                <h5 class="main-headline mt-5">COMMENTS, REVIEWS & COMPLAINTS</h5>
+
+                <div class="sidebar-comment pt-2">
+                    <!-- single-comment -->
+                    <a href="" class="a-hover">
+                        <h6 class="fw-bold"> <img src="assets/icons/user.svg" alt="icon"> Jon Doe</h6>
+                        <span>Bank of America</span>
+                        <br>
+                        <small>This bank branch is awesome! Friendly, helpful and great hours.</small>
+                    </a>
+                    <hr>
+                    <!-- single-comment -->
+                    <a href="" class="a-hover">
+                        <h6 class="fw-bold"> <img src="assets/icons/user.svg" alt="icon"> Jon Doe</h6>
+                        <span>Bank of America</span>
+                        <br>
+                        <small>This bank branch is awesome! Friendly, helpful and great hours.</small>
+                    </a>
+                    <hr>
+                    <!-- single-comment -->
+                    <a href="" class="a-hover">
+                        <h6 class="fw-bold"> <img src="assets/icons/user.svg" alt="icon"> Jon Doe</h6>
+                        <span>Bank of America</span>
+                        <br>
+                        <small>This bank branch is awesome! Friendly, helpful and great hours.</small>
+                    </a>
+                    <hr>
+                    <!-- single-comment -->
+                    <a href="" class="a-hover">
+                        <h6 class="fw-bold"> <img src="assets/icons/user.svg" alt="icon"> Jon Doe</h6>
+                        <span>Bank of America</span>
+                        <br>
+                        <small>This bank branch is awesome! Friendly, helpful and great hours.</small>
+                    </a>
+                    <hr>
+                    <!-- single-comment -->
+                    <a href="" class="a-hover">
+                        <h6 class="fw-bold"> <img src="assets/icons/user.svg" alt="icon"> Jon Doe</h6>
+                        <span>Bank of America</span>
+                        <br>
+                        <small>This bank branch is awesome! Friendly, helpful and great hours.</small>
+                    </a>
+                    <hr>
+                    <!-- single-comment -->
+                    <a href="" class="a-hover">
+                        <h6 class="fw-bold"> <img src="assets/icons/user.svg" alt="icon"> Jon Doe</h6>
+                        <span>Bank of America</span>
+                        <br>
+                        <small>This bank branch is awesome! Friendly, helpful and great hours.</small>
+                    </a>
+                    <hr>
+                    <!-- single-comment -->
+                    <a href="" class="a-hover">
+                        <h6 class="fw-bold"> <img src="assets/icons/user.svg" alt="icon"> Jon Doe</h6>
+                        <span>Bank of America</span>
+                        <br>
+                        <small>This bank branch is awesome! Friendly, helpful and great hours.</small>
+                    </a>
+                    <hr>
+                    <!-- single-comment -->
+                    <a href="" class="a-hover">
+                        <h6 class="fw-bold"> <img src="assets/icons/user.svg" alt="icon"> Jon Doe</h6>
+                        <span>Bank of America</span>
+                        <br>
+                        <small>This bank branch is awesome! Friendly, helpful and great hours.</small>
+                    </a>
+                    <hr>
+                    <!-- single-comment -->
+                    <a href="" class="a-hover">
+                        <h6 class="fw-bold"> <img src="assets/icons/user.svg" alt="icon"> Jon Doe</h6>
+                        <span>Bank of America</span>
+                        <br>
+                        <small>This bank branch is awesome! Friendly, helpful and great hours.</small>
+                    </a>
+                    <hr>
+                    <!-- single-comment -->
+                    <a href="" class="a-hover">
+                        <h6 class="fw-bold"> <img src="assets/icons/user.svg" alt="icon"> Jon Doe</h6>
+                        <span>Bank of America</span>
+                        <br>
+                        <small>This bank branch is awesome! Friendly, helpful and great hours.</small>
+                    </a>
+                    <hr>
+                </div> <!--.sidebar-comment-->
+
+
+            </div><!--sidebar-->
+        </div> <!-- .branch-wrap -->
+    </main>
+
+    <footer class="mt-5">
+        <div class="container footer-top">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 pt-5 footer-top-primary-col col-6">
+              <a href="home.html">
+                <div class="logo">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/online-store.png">
+                </div>
+              </a>
+              <br>
+              <p><i class="bi bi-geo-alt"></i> Joondalup WA 6027, Australia</p>
+              <p><i class="bi bi-envelope"></i> <a href="mailto:abdullah.azonedev@gmail.com" class="fency-link"> abdullah.azonedev@gmail.com</a></p>
+    
+            </div>
+            <div class="col-md-3 col-sm-6 pt-5 footer-top-about-col col-6">
+              <p>
+                <a href="about-us.html" class="fancy-link">About Us</a>
+              </p>
+              <p>
+                <a href="contact-us.html" class="fancy-link">Contact Us</a>
+              </p>
+              <p>
+                <a href="terms-condition.html" class="fancy-link">Terms & Condition of services</a>
+              </p>
+            </div>
+            <div class="col-md-3 col-sm-6 pt-5 footer-top-for-business-col col-6">
+              <p>
+                <a href="articles.html" class="fancy-link">Article form store locator</a>
+              </p>
+              <p>
+                <a href="state-store.html" class="fancy-link">All States</a>
+              </p>
+              <p>
+                <a href="city-store.html" class="fancy-link">All Cities</a>
+              </p>
+            </div>
+            <div class="col-md-3 col-sm-6 pt-5 footer-top-services-col col-6">
+              <p>
+                <a href="contact-us.html" class="fancy-link">Software development</a>
+              </p>
+              <p>
+                <a href="contact-us.html" class=" fancy-link">Web application development</a>
+              </p>
+              <p>
+                <a href="contact-us.html" class=" fancy-link">Digital marketing</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom fw-bold text-center p-3">
+            Copyright @ Store Locator | Designed & Developed by - <a href="http://azonedev.com" target="_blank" class="fancy-link">azOneDev</a>
+        </div>
+    </footer>
+
+    <!-- script-cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+    <!-- js-library -->
+    <script src="assets/js-lib/"></script>
+
+    <!-- main-script -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
