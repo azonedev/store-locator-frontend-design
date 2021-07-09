@@ -70,24 +70,7 @@ li{
 .main-color{
 	color:var(--main-color);
 }
-.light-blue{
-	color: var(--light-blue);
-}
-.blue-green{
-	color: var(--blue-green);
-}
-.main-bg{
-	background:var(--main-color);
-}
-.blue-bg{
-	background: var(--deep-blue);
-}
-.light-blue-bg{
-	background: var(--light-blue);
-}
-.light-blue-bg{
-	background: var(--light-blue);
-}
+
 input:focus,select:focus,textarea:focus { 
     outline: none !important;
     border-color: var(--main-color) !important;
