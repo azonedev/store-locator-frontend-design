@@ -62,6 +62,7 @@ a:hover{
 }
 .block-hover:hover{
 	background: var(--light-blue);
+	/* color: var(--white); */
 }
 img{
 	max-width: 100%;
